@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reverseage.app/sitemap.xml

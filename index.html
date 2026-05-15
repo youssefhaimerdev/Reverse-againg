@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse Aging — Measure, Track &amp; Slow Your Biological Age | Free Tool</title>
+  <meta name="description" content="Discover how to reverse your biological age naturally. Take our free aging speed assessment, track your daily habits, and get personalized science-backed guidance. No products sold. No data stored. 100% free.">
+  <meta name="keywords" content="reverse aging, anti-aging tips, biological age calculator, how to age backwards, slow down aging naturally, longevity habits, aging speed test, anti-aging diet, exercise and longevity, sleep and aging, stress and aging, how to look younger, cognitive aging prevention, vitamin D aging, Mediterranean diet longevity, telomere health, cellular aging, free radical damage, inflammation and aging, blue zones longevity, anti-aging lifestyle, reverse biological age, healthy aging tips, longevity science, skin aging prevention, brain aging, hormones and aging, autophagy, intermittent fasting longevity, gut health aging, mindfulness and aging, social connection longevity, sunlight vitamin D health, hydration anti-aging, sugar and aging, processed food aging, sedentary lifestyle aging">
+  <meta name="author" content="ReverseAge">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://reverseage.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reverse Aging — Measure and Slow Your Biological Age for Free">
+  <meta property="og:description" content="Take our free aging speed assessment and get a personalized plan to reverse your biological age through daily habits. 100% free. No products. No data stored.">
+  <meta property="og:url" content="https://reverseage.app/">
+  <meta property="og:image" content="https://reverseage.app/og-image.jpg">
+  <meta property="og:site_name" content="ReverseAge">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reverse Aging — Free Biological Age Tracker">
+  <meta name="twitter:description" content="Free aging speed assessment plus daily habit tracker. Science-backed anti-aging principles. No products sold.">
+  <meta name="twitter:image" content="https://reverseage.app/og-image.jpg">
+  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE">
+  <meta name="theme-color" content="#1B4D36">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://reverseage.app/#app","name":"ReverseAge","url":"https://reverseage.app/","description":"Free biological age assessment and daily habit tracker to help reverse aging naturally through science-backed lifestyle principles.","applicationCategory":"HealthApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Aging Speed Assessment","Daily Habit Tracker","Personalized Feedback","Progress Reports","Areas to Work On","100% Private — No Data Collection"]},{"@type":"Organization","@id":"https://reverseage.app/#org","name":"ReverseAge","url":"https://reverseage.app/","description":"A free platform dedicated to helping people reverse their biological age through daily habit tracking and science-backed lifestyle principles."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can you really reverse aging?","acceptedAnswer":{"@type":"Answer","text":"While chronological age cannot be reversed, biological age — how old your cells and organs actually function — can be significantly improved through lifestyle changes. Research in epigenetics shows that diet, sleep, exercise, stress management, and social connection can measurably slow and even reverse biological aging markers."}},{"@type":"Question","name":"What is biological age?","acceptedAnswer":{"@type":"Answer","text":"Biological age is a measure of how old your body actually is at the cellular level, as opposed to how many years you've been alive. People with the same chronological age can have very different biological ages based on their lifestyle, genetics, and environment."}},{"@type":"Question","name":"How does the aging speed score work?","acceptedAnswer":{"@type":"Answer","text":"Our aging speed score is calculated from a comprehensive assessment of the key lifestyle factors that science has identified as the strongest drivers of biological aging. A lower score means you are aging more slowly. The score ranges from 0 to 100."}}]}]}
+  </script>
+
+  <!-- Google Analytics GA4 — Uncomment and replace G-XXXXXXXXXX -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Google AdSense — Uncomment and replace ca-pub-XXXXXXXXXXXXXXXX -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo" data-view="home"><span>🌿</span> ReverseAge</div>
+  <div class="nav-links">
+    <button class="nav-link" data-view="home">Home</button>
+    <button class="nav-link" data-view="dashboard" data-requires="survey">Dashboard</button>
+    <button class="nav-link" data-view="tracker" data-requires="survey">Check-In</button>
+    <button class="nav-link" data-view="reports" data-requires="survey">Reports</button>
+    <button class="nav-link" data-view="areas" data-requires="survey">Improve</button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<nav class="mob-nav">
+  <button class="mn-btn" data-view="home"><span class="mni">🏠</span>Home</button>
+  <button class="mn-btn" data-view="dashboard" data-requires="survey"><span class="mni">📊</span>Dashboard</button>
+  <button class="mn-btn" data-view="tracker" data-requires="survey"><span class="mni">✍️</span>Check-In</button>
+  <button class="mn-btn" data-view="reports" data-requires="survey"><span class="mni">📈</span>Reports</button>
+  <button class="mn-btn" data-view="areas" data-requires="survey"><span class="mni">🎯</span>Improve</button>
+</nav>
+
+<!-- ===== VIEW: HOME ===== -->
+<div id="view-home" class="view">
+
+  <section class="hero">
+    <div class="hero-orb1"></div>
+    <div class="hero-orb2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🧬 Science-backed · 100% Free · No data stored</div>
+      <h1 class="hero-title">Age is a number.<br><em>Vitality is a choice.</em></h1>
+      <p class="hero-sub">Discover how fast you're aging, get personalized guidance, and build daily habits that turn back your biological clock — one day at a time.</p>
+      <div class="hero-actions">
+        <button class="btn btn-gold btn-lg" id="hero-cta">🌿 Get My Free Assessment</button>
+        <button class="btn btn-lg" style="color:white;border:2px solid rgba(255,255,255,.45);background:rgba(255,255,255,.1)" onclick="document.getElementById('mission-section').scrollIntoView({behavior:'smooth'})">Learn More ↓</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-num">0</div><div class="hero-stat-lbl">Products sold</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">0</div><div class="hero-stat-lbl">Data collected</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">∞</div><div class="hero-stat-lbl">Better days ahead</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement — 728×90</div></div></div>
+
+  <div class="quote-strip"><p class="qs-inner" id="quote-strip-text">"The greatest wealth is health."</p></div>
+
+  <section class="mission" id="mission-section">
+    <div class="container">
+      <div class="mission-grid">
+        <div>
+          <p class="section-eyebrow">Our Mission</p>
+          <h2>Reverse aging isn't a fantasy. It's a daily practice.</h2>
+          <p class="mission-body">ReverseAge is a free platform built with one purpose: to give every person on earth the knowledge and tools to live a longer, healthier, more vibrant life — without buying anything.</p>
+          <p class="mission-body">Science has discovered that your biological age — how old your cells actually are — is profoundly influenced by the choices you make every single day. We help you see exactly where you stand and guide you toward what matters most.</p>
+          <ul class="promise-list">
+            <li class="promise-item"><div class="p-icon">🚫</div><div class="p-text"><strong>We sell nothing.</strong> No supplements, no programs, no subscriptions. Ever.</div></li>
+            <li class="promise-item"><div class="p-icon">🔒</div><div class="p-text"><strong>We store nothing.</strong> All your data lives only on your device. We have zero access to it.</div></li>
+            <li class="promise-item"><div class="p-icon">🧬</div><div class="p-text"><strong>We use science.</strong> Every recommendation is grounded in peer-reviewed research on aging and longevity.</div></li>
+            <li class="promise-item"><div class="p-icon">💚</div><div class="p-text"><strong>We care deeply.</strong> Our mission is your health — not your wallet, not your data.</div></li>
+          </ul>
+          <button class="btn btn-primary" id="hero-cta-2">🌿 Start My Free Assessment</button>
+        </div>
+        <div class="mission-visual">
+          <div class="mission-card-stack">
+            <div class="mv-main">
+              <h3>Why now?</h3>
+              <p>For the first time in human history, science has identified the exact behaviors that control how fast we age. The window to act is always open — and it starts today.</p>
+            </div>
+            <div class="mv-float mv-f1">🧬 Biological age can be reversed</div>
+            <div class="mv-float mv-f2">💚 Completely free, always</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="text-align:center"><div class="ad-wrap"><div class="ad-unit ad-unit-rect">Advertisement — 336×280</div></div></div>
+
+  <section class="principles">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">The Pillars of Reverse Aging</p>
+        <h2>Simple daily principles that science says actually work</h2>
+        <p class="section-sub">You don't need a doctor, a supplement, or a gym membership to start. You need these principles — applied consistently.</p>
+      </div>
+      <div class="principles-grid">
+        <div class="p-card"><div class="p-card-icon">🌙</div><div class="p-card-title">Sleep Early &amp; Deeply</div><p class="p-card-text">Going to sleep before 11pm aligns with your circadian rhythm, triggering cellular repair, growth hormone release, and brain detoxification — all of which slow aging at the cellular level.</p></div>
+        <div class="p-card"><div class="p-card-icon">🥗</div><div class="p-card-title">Eat to Fight Inflammation</div><p class="p-card-text">Whole foods, vegetables, and healthy fats are anti-aging medicine. Sugar, processed food, and refined carbs cause glycation and inflammation — the root cause of accelerated aging.</p></div>
+        <div class="p-card"><div class="p-card-icon">🏃</div><div class="p-card-title">Move Every Single Day</div><p class="p-card-text">Exercise is the most powerful anti-aging intervention known to science. Even 30 minutes of daily walking measurably reduces biological aging, boosts brain health, and extends lifespan.</p></div>
+        <div class="p-card"><div class="p-card-icon">🧘</div><div class="p-card-title">Tame Your Stress</div><p class="p-card-text">Chronic stress physically shortens your telomeres — the biological aging clock in every cell. Daily mindfulness, breathwork, or time in nature directly slows this process.</p></div>
+        <div class="p-card"><div class="p-card-icon">💧</div><div class="p-card-title">Hydrate Relentlessly</div><p class="p-card-text">Water is involved in every cellular process. Chronic dehydration causes visible skin aging, impairs kidney function, and reduces cognitive performance. 2 liters daily is non-negotiable.</p></div>
+        <div class="p-card"><div class="p-card-icon">☀️</div><div class="p-card-title">Embrace Sunlight</div><p class="p-card-text">20–30 minutes of daily sunlight triggers Vitamin D synthesis, regulates your circadian rhythm, boosts serotonin, and sets your body clock — all critical anti-aging signals.</p></div>
+        <div class="p-card"><div class="p-card-icon">🧠</div><div class="p-card-title">Never Stop Learning</div><p class="p-card-text">Your brain is a muscle. Daily learning — reading, new skills, challenging conversations — builds cognitive reserve that protects against dementia and keeps the brain biologically young.</p></div>
+        <div class="p-card"><div class="p-card-icon">❤️</div><div class="p-card-title">Invest in Connection</div><p class="p-card-text">Strong social connections reduce mortality by 50%. The quality of your relationships is one of the most powerful predictors of how long and how well you will live.</p></div>
+        <div class="p-card"><div class="p-card-icon">🎯</div><div class="p-card-title">Live With Purpose</div><p class="p-card-text">Having a strong sense of purpose in life is linked to 7 extra years of healthy living. People who know their why make better health decisions and age more slowly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to find out how fast you're aging?</h2>
+      <p>Take the free 5-minute aging speed assessment and get your personalized biological age score, category breakdown, and a custom action plan — instantly.</p>
+      <button class="btn btn-gold btn-lg" id="hero-cta-3">🌿 Take the Free Assessment</button>
+    </div>
+  </section>
+
+  <div class="container"><div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement — 728×90</div></div></div>
+
+  <!-- SEO CONTENT -->
+  <section class="seo-section" itemscope itemtype="https://schema.org/Article">
+    <div class="seo-inner">
+
+      <h2>The Science of Reverse Aging: Can You Actually Turn Back the Clock?</h2>
+      <p>For most of human history, aging was considered an inevitable, one-way process — a slow march toward decline that no amount of willpower or medicine could alter. That understanding has changed dramatically. Over the past two decades, a revolution in longevity science, epigenetics, and cellular biology has revealed something extraordinary: <strong>your biological age and your chronological age are not the same thing</strong>, and the gap between them is largely under your control.</p>
+      <p>Biological age — sometimes called cellular age or functional age — measures how old your body actually is at the molecular level. It reflects the health of your cells, the length of your telomeres, the efficiency of your organs, and the balance of your hormonal systems. Two people who are both 50 years old chronologically can have biological ages of 35 and 70 respectively, depending entirely on their lifestyle habits and environment. The science of reverse aging is about understanding what drives that gap — and deliberately closing it in your favor.</p>
+
+      <div class="seo-callout">🔬 <strong>Key Insight:</strong> Research published in leading journals has shown that comprehensive lifestyle interventions can reduce biological age by 3–8 years within just 8 weeks. The mechanisms are real, measurable, and available to anyone.</div>
+
+      <h2>What Is Biological Age and Why Does It Matter?</h2>
+      <p>Biological age is determined by a range of measurable biomarkers including telomere length, epigenetic DNA methylation patterns, inflammatory marker levels such as C-reactive protein and interleukin-6, hormonal profiles, cardiovascular function, mitochondrial health, and cognitive performance. The field of epigenetics has produced several powerful biological clocks such as the Horvath clock and the GrimAge clock, which can predict a person's biological age with remarkable accuracy based on patterns in their DNA.</p>
+      <p>Why does it matter? Because biological age is a far better predictor of health outcomes, disease risk, and lifespan than chronological age. A 60-year-old with a biological age of 45 has a dramatically lower risk of cardiovascular disease, dementia, cancer, and diabetes than a 60-year-old with a biological age of 70. More importantly, biological age responds to intervention — meaning you have real power to change it.</p>
+
+      <h3>Telomeres: Your Cellular Aging Clock</h3>
+      <p>Telomeres are the protective caps at the ends of your chromosomes — think of them like the plastic tips at the end of a shoelace. Each time a cell divides, telomeres shorten slightly. When they become too short, the cell can no longer divide and either becomes senescent — a zombie cell that causes chronic inflammation — or dies. Telomere shortening is one of the primary drivers of aging, and it is directly influenced by lifestyle factors.</p>
+      <p>Chronic stress, poor sleep, smoking, obesity, processed food, and sedentary behavior all accelerate telomere shortening. On the flip side, regular exercise, meditation, a plant-rich diet, quality sleep, and strong social connections have all been shown in clinical studies to <strong>preserve and even lengthen telomeres</strong> — a biological mechanism by which lifestyle literally reverses aging at the DNA level.</p>
+
+      <h2>Sleep and Aging: The Most Underrated Anti-Aging Tool</h2>
+      <p>If there is a single lifestyle factor most strongly linked to the rate of aging and overall health, it is sleep. During deep slow-wave sleep, your brain activates the glymphatic system — a specialized waste-clearance network that flushes toxic proteins including beta-amyloid, a key driver of Alzheimer's disease, from neural tissue. Simultaneously, your pituitary gland releases the majority of its daily growth hormone quota, which drives cellular repair throughout the body.</p>
+      <p>Adults who consistently sleep fewer than 7 hours per night show accelerated biological aging across virtually every measured biomarker. They have shorter telomeres, higher inflammatory markers, impaired glucose metabolism, elevated cortisol, and reduced immune function. Conversely, people who maintain consistent 7 to 9 hour sleep schedules show measurably younger biological profiles than their sleep-deprived peers of the same chronological age.</p>
+      <p>The timing of sleep matters as much as the duration. Your circadian rhythm — the internal 24-hour clock that governs virtually every biological process — is most efficiently aligned when sleep begins before midnight and ends with natural morning light. Going to bed before 11pm dramatically increases the proportion of deep restorative slow-wave sleep you receive, regardless of total sleep duration.</p>
+
+      <h3>Practical Sleep Optimization for Anti-Aging</h3>
+      <ul>
+        <li>Set a consistent bedtime and wake time — even on weekends — to anchor your circadian rhythm</li>
+        <li>Keep your bedroom dark, cool at 65 to 68 degrees Fahrenheit, and screen-free</li>
+        <li>Avoid caffeine after 2pm — its 6-hour half-life means afternoon coffee disrupts deep sleep architecture</li>
+        <li>Consider magnesium glycinate before bed — it supports GABA pathways linked to deep sleep quality</li>
+        <li>Get 10 to 15 minutes of morning sunlight within 1 hour of waking — this sets your cortisol rhythm</li>
+      </ul>
+
+      <h2>Anti-Aging Nutrition: What You Eat Controls How Fast You Age</h2>
+      <p>Your diet is arguably the most powerful tool you have for controlling biological aging. The food you eat provides the raw materials for cellular repair, the fuel for mitochondrial function, and the signaling molecules that activate or silence thousands of genes. Eating the wrong foods does not just make you gain weight — it actively triggers the molecular mechanisms of aging.</p>
+
+      <h3>The Glycation Problem: Why Sugar Ages You Faster</h3>
+      <p>Glycation occurs when excess sugar molecules in the bloodstream attach to proteins — including collagen and elastin in skin, proteins in blood vessel walls, and enzymes throughout the body. This process creates advanced glycation end-products known as AGEs, which literally stiffen and damage tissues throughout the body. The visible result is wrinkled, dull skin. The invisible result is stiffer arteries, reduced organ function, and accelerated neurodegeneration. Reducing sugar and refined carbohydrate intake is one of the fastest ways to slow visible and cellular aging simultaneously.</p>
+
+      <h3>The Anti-Inflammatory Diet for Longevity</h3>
+      <p>Chronic low-grade inflammation — now called inflammaging by researchers — is the common thread running through nearly every age-related disease, from cardiovascular disease and diabetes to cancer and Alzheimer's. Diet is the most powerful modulator of systemic inflammation available. A diet rich in colorful vegetables, fruits, omega-3 fatty acids, fermented foods, and whole grains while low in ultra-processed foods, refined oils, and added sugars has been shown to dramatically reduce inflammatory biomarkers and slow biological aging.</p>
+      <p>The Mediterranean diet — consistently ranked as the most evidence-based dietary pattern for longevity — is associated with a 25% reduction in cardiovascular mortality, a 20% reduction in stroke risk, and significantly lower rates of cognitive decline. Its core components include extra virgin olive oil, abundant vegetables and legumes, whole grains, fatty fish, nuts, and very little processed food.</p>
+
+      <h3>The Power of Phytonutrients</h3>
+      <p>Colorful plant foods contain thousands of phytonutrients — compounds like polyphenols, flavonoids, carotenoids, and sulforaphane — that activate the body's own antioxidant defense systems, protect DNA from damage, and directly modulate gene expression in ways that promote longevity. Eating a diverse range of colorful vegetables and fruits floods your cells with these protective molecules. Blueberries, broccoli, spinach, turmeric, green tea, garlic, and dark leafy greens are among the most potent anti-aging foods known to science.</p>
+
+      <div class="ad-wrap" style="text-align:center"><div class="ad-unit ad-unit-rect">Advertisement — 336×280</div></div>
+
+      <h2>Exercise: The Most Powerful Anti-Aging Intervention in Existence</h2>
+      <p>If you could bottle the effects of regular exercise and sell it as a drug, it would be the most prescribed medication in human history. The anti-aging effects of exercise are so profound and so well-documented that no other single intervention comes close. Exercise increases mitochondrial biogenesis, stimulates the release of BDNF which regenerates brain cells, reduces systemic inflammation, improves insulin sensitivity, strengthens the cardiovascular system, preserves muscle mass, and lengthens telomeres.</p>
+      <p>A landmark study found that people who exercised at moderate to vigorous intensity for at least 30 minutes five days per week had telomeres equivalent to someone nearly nine years younger than their sedentary peers of the same chronological age. The most powerful modalities for longevity are high-intensity interval training, strength training, and consistent low-intensity movement such as daily walking.</p>
+
+      <h2>Chronic Stress: The Silent Accelerator of Aging</h2>
+      <p>Chronic psychological stress is one of the most damaging things you can do to your biological age, yet it remains the most normalized and overlooked health hazard of modern life. When you experience stress, your adrenal glands release cortisol and adrenaline — hormones designed for short-term emergencies. When this response becomes chronic — whether from work pressure, relationship conflict, financial anxiety, or general overwhelm — it creates a cascade of biological damage that touches every system in the body.</p>
+      <p>Chronically elevated cortisol shrinks the hippocampus, impairs immune function, promotes abdominal fat accumulation, raises blood pressure, disrupts sleep, and most significantly for aging, directly accelerates telomere shortening. Research by Nobel Prize-winning biologist Elizabeth Blackburn showed that chronically stressed individuals had telomeres equivalent to someone a full decade older than their non-stressed peers, simply due to sustained psychological stress. Stress management is not a luxury — it is a fundamental anti-aging medical intervention.</p>
+
+      <h3>Evidence-Based Stress Reduction Techniques</h3>
+      <p>Among the most effective stress reduction techniques for longevity are mindfulness meditation, which has been shown in clinical trials to reduce cortisol by up to 30% and measurably lengthen telomeres; regular aerobic exercise; time in nature where just 20 minutes reduces cortisol by over 21%; deep diaphragmatic breathing; quality social connection; and having a clear sense of purpose. Developing even one of these practices consistently can produce measurable anti-aging effects within weeks.</p>
+
+      <h2>Sunlight, Vitamin D, and Cellular Health</h2>
+      <p>Vitamin D is simultaneously one of the most important nutrients for longevity and one of the most common deficiencies in the modern world. Affecting an estimated 1 in 3 adults globally, Vitamin D deficiency is linked to accelerated aging, increased cancer risk, impaired immune function, depression, bone loss, and cardiovascular disease. The primary source of Vitamin D is synthesis in the skin triggered by ultraviolet B radiation from sunlight — making daily outdoor time a genuine anti-aging behavior.</p>
+      <p>Beyond Vitamin D, morning sunlight exposure plays a critical role in regulating the circadian rhythm, setting the daily cortisol curve, stimulating serotonin production, and synchronizing the suprachiasmatic nucleus — the brain's master clock — with the actual time of day. People who get consistent morning sunlight report better sleep, more stable mood, higher energy levels, and greater mental clarity, all of which correlate with slower biological aging.</p>
+
+      <h2>Social Connection and Longevity: The Medicine You Cannot Buy</h2>
+      <p>One of the most striking findings in the science of longevity is the extraordinary protective effect of strong social connections. A landmark meta-analysis examining data from over 300,000 individuals found that people with strong social relationships had a 50% greater likelihood of survival than those with poor social connections. The magnitude of this effect exceeded the impact of smoking cessation, exercise, and even some medical treatments.</p>
+      <p>The biological mechanisms are compelling. Positive social interactions trigger the release of oxytocin which reduces inflammation and blood pressure, boost serotonin improving mood and reducing anxiety, lower cortisol, and activate reward pathways that promote overall health behaviors. Conversely, chronic loneliness activates the same inflammatory pathways as physical injury, and social isolation is now recognized as a public health crisis with mortality risks equivalent to smoking 15 cigarettes per day.</p>
+
+      <h2>The Blue Zones: Secrets from the World's Longest-Lived People</h2>
+      <p>Blue Zones are the five regions of the world where people consistently live past 100 in good health: Okinawa in Japan, Sardinia in Italy, the Nicoya Peninsula in Costa Rica, Ikaria in Greece, and Loma Linda in California. Research by Dan Buettner and National Geographic identified the lifestyle habits shared across all five regions, forming the most evidence-based blueprint for human longevity ever assembled from naturally occurring populations.</p>
+      <p>The common threads among Blue Zone populations include predominantly plant-based diets with little processed food, natural daily movement throughout the day rather than structured exercise, a strong sense of purpose called ikigai in Okinawa and plan de vida in Nicoya, consistent stress reduction practices, moderate or no alcohol consumption, strong family and community bonds, and belonging to a faith-based community. Strikingly, genetics accounts for only about 20 to 30% of longevity in these populations — the rest is lifestyle. This means the habits that produce extraordinary longevity are accessible to anyone, anywhere, at any age.</p>
+
+      <h2>Brain Health and Cognitive Aging: Keep Your Mind Sharp for Life</h2>
+      <p>Cognitive decline is not an inevitable consequence of aging — it is largely a consequence of lifestyle. The brain, like every other organ, responds dramatically to the way it is treated. Alzheimer's disease and dementia, long considered purely genetic or age-determined, are now understood to be significantly preventable through lifestyle intervention. A landmark report by the Lancet Commission on Dementia Prevention identified 12 modifiable risk factors that together account for approximately 40% of all dementia cases worldwide.</p>
+      <p>Among the most powerful protectors of cognitive aging are regular aerobic exercise which increases BDNF and hippocampal volume, continuous learning and mental challenge which builds cognitive reserve, social engagement which stimulates multiple brain regions, quality sleep which clears neurotoxic waste products, a plant-rich diet low in processed foods, and management of cardiovascular risk factors. Your brain wants to stay sharp — give it the right environment and it will respond accordingly.</p>
+
+      <h2>Beauty, Skin, and Aging: What Science Actually Tells Us</h2>
+      <p>The multi-billion dollar beauty industry sells the promise of younger-looking skin through creams, serums, and treatments. Yet the most powerful determinants of skin aging are almost entirely lifestyle-based. Ultraviolet radiation from sun exposure without protection is the leading cause of premature skin aging, responsible for approximately 80 to 90% of visible facial aging according to dermatological research. Daily broad-spectrum SPF 30 or higher sunscreen is the single most evidence-based anti-aging skincare intervention available, far exceeding the impact of any cream or serum.</p>
+      <p>Beyond sun protection, the factors that most powerfully influence skin aging are hydration where dehydrated skin shows accelerated wrinkling and reduced elasticity, sugar intake which causes glycation that destroys collagen and elastin, sleep quality since skin undergoes most of its cellular repair during deep sleep, smoking which causes profound oxidative damage to skin cells and collagen, and nutrition particularly Vitamin C which is essential for collagen synthesis, Vitamin E, omega-3 fatty acids, and antioxidant-rich foods that protect against free radical damage.</p>
+
+      <h2>The Gut Microbiome and Aging: The Trillion-Organism Anti-Aging System</h2>
+      <p>Your gut contains approximately 100 trillion microorganisms that collectively exert profound influence over virtually every aspect of your health, including your rate of aging. The composition and diversity of the gut microbiome changes with age, and research increasingly shows that a healthy, diverse microbiome is both a consequence and a driver of healthy aging. Centenarians consistently show more diverse and protective microbiome profiles than their shorter-lived peers.</p>
+      <p>Diet is the most powerful modulator of microbiome health. A diet rich in fiber from vegetables, legumes, fruits, and whole grains, plus fermented foods such as yogurt, kefir, kimchi, and sauerkraut, feeds beneficial bacteria and promotes microbiome diversity. Ultra-processed foods, excessive sugar, and antibiotics disrupt the microbiome and are associated with accelerated aging and chronic disease. Taking care of your gut is, in a very real sense, taking care of your biological age.</p>
+
+      <h2>Frequently Asked Questions About Aging and Longevity</h2>
+      <div class="faq-item">
+        <p class="faq-q">Can you really reverse aging, or is this just marketing?</p>
+        <p class="faq-a">While chronological age cannot be reversed, biological age — how old your cells and organs function — can be measurably improved. A 2021 study in Aging Cell showed that a comprehensive lifestyle intervention reduced participants' biological age as measured by the GrimAge epigenetic clock by an average of 3.23 years in just 8 weeks. This is published science, not marketing.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How long does it take to see results from anti-aging lifestyle changes?</p>
+        <p class="faq-a">Many people report improvements in energy, sleep quality, skin appearance, and mental clarity within 2 to 4 weeks of consistent lifestyle changes. Measurable changes in biological age biomarkers can be detected within 8 to 12 weeks. The compounding effects of consistent habits over months and years are profound and transformative.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Is it too late to start if I'm already older?</p>
+        <p class="faq-a">Absolutely not. Research consistently shows that lifestyle interventions produce significant biological benefits at any age. Studies on people in their 70s and 80s show that beginning an exercise program, improving diet, or starting a mindfulness practice produces measurable reductions in biological aging markers. The best time to begin was 20 years ago. The second-best time is today.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">What is the single most impactful change I can make?</p>
+        <p class="faq-a">Research consistently points to sleep as the highest-leverage intervention for most people in the modern world, because chronic sleep deprivation is so widespread and its biological consequences so severe. However, the most impactful change for any individual depends on their current habits — which is exactly why the personalized assessment and daily tracking tools on this platform are so valuable.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How does the daily aging speed score work?</p>
+        <p class="faq-a">Your daily aging speed score is calculated from a comprehensive assessment of the lifestyle factors that the strongest longevity research has identified as primary drivers of biological aging. Each factor is scored based on its evidence-based impact. A lower score means slower aging that day. The daily tracker lets you see how each day's choices affect your trajectory over time, building a detailed picture of your habits and progress.</p>
+      </div>
+
+      <div class="ad-wrap"><div class="ad-unit ad-unit-rect" style="margin:0 auto">Advertisement — 336×280</div></div>
+
+    </div>
+  </section>
+
+  <div class="container"><div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement — 728×90</div></div></div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">🌿 ReverseAge</div>
+        <p class="footer-desc">A free platform dedicated to helping people measure, track, and reverse their biological age through science-backed daily habits. No products sold. No data collected. Ever.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><button data-view="home">Home</button></li>
+          <li><button data-view="dashboard" data-requires="survey">Dashboard</button></li>
+          <li><button data-view="tracker" data-requires="survey">Daily Check-In</button></li>
+          <li><button data-view="reports" data-requires="survey">Reports</button></li>
+          <li><button data-view="areas" data-requires="survey">Areas to Improve</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Our Promise</div>
+        <ul class="footer-links">
+          <li><span style="color:rgba(255,255,255,.6);font-size:.88rem">🚫 We sell nothing</span></li>
+          <li><span style="color:rgba(255,255,255,.6);font-size:.88rem">🔒 We store no data</span></li>
+          <li><span style="color:rgba(255,255,255,.6);font-size:.88rem">🧬 Science-backed only</span></li>
+          <li><span style="color:rgba(255,255,255,.6);font-size:.88rem">💚 Always free</span></li>
+          <li><span style="color:rgba(255,255,255,.6);font-size:.88rem">❤️ Built to help</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ReverseAge · All data stays on your device · No accounts · No tracking · Built with love for your longevity</p>
+      <p style="margin-top:8px;font-size:.78rem">The information on this website is for educational purposes only and is not a substitute for professional medical advice. Always consult a qualified healthcare provider before making health decisions.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ===== VIEW: SURVEY ===== -->
+<div id="view-survey" class="view">
+  <div class="survey-hdr">
+    <h2>Your Aging Speed Assessment</h2>
+    <p>Answer honestly — this is for you. There are no wrong answers, only insights waiting to help you live longer.</p>
+    <div class="progress-wrap">
+      <div class="prog-info"><span id="survey-prog-text">Question 1 of 20</span><span id="survey-prog-pct">0% complete</span></div>
+      <div class="prog-track"><div class="prog-fill" id="survey-prog-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="container" style="max-width:680px"><div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement</div></div></div>
+  <div class="survey-body"><div id="survey-q-body"></div></div>
+</div>
+
+<!-- ===== VIEW: RESULTS ===== -->
+<div id="view-results" class="view">
+  <div class="res-hero">
+    <h2>Your Aging Speed Results</h2>
+    <p>Here's a clear picture of where you stand — and exactly what to work on first.</p>
+    <div class="score-wrap">
+      <div class="score-ring">
+        <svg viewBox="0 0 200 200">
+          <circle class="track" cx="100" cy="100" r="80"/>
+          <circle class="fill" id="score-circle-fill" cx="100" cy="100" r="80" stroke-dasharray="502" stroke-dashoffset="502"/>
+        </svg>
+        <div class="score-center">
+          <span class="score-num" id="res-score-num">—</span>
+          <span class="score-unit">aging speed</span>
+        </div>
+      </div>
+      <div class="score-badge" id="res-score-badge">Calculating...</div>
+    </div>
+  </div>
+  <div class="res-body">
+    <div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement</div></div>
+    <h3 style="margin-bottom:16px;font-family:var(--font-display)">📊 Your Category Scores</h3>
+    <div class="cat-grid" id="res-cat-grid"></div>
+    <div class="fb-section">
+      <h3 class="fb-title">✅ Your Strengths — Keep it up!</h3>
+      <div class="fb-list" id="fb-good-list"></div>
+    </div>
+    <div class="fb-section">
+      <h3 class="fb-title">⚠️ Areas That Are Aging You Faster</h3>
+      <div class="fb-list" id="fb-bad-list"></div>
+    </div>
+    <div class="ad-wrap" style="text-align:center"><div class="ad-unit ad-unit-rect">Advertisement</div></div>
+    <div style="text-align:center;margin-top:40px">
+      <h3 style="font-family:var(--font-display);margin-bottom:12px">Ready to start your daily journey? 🌿</h3>
+      <p style="color:var(--text-light);margin-bottom:24px">Track your habits every day and watch your aging speed score improve week by week.</p>
+      <button class="btn btn-primary btn-lg" onclick="startTracker();showView('tracker')">🌿 Start Daily Tracking</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== VIEW: DASHBOARD ===== -->
+<div id="view-dashboard" class="view">
+  <div class="dash-hdr">
+    <div class="dash-hdr-inner">
+      <p class="dash-greeting" id="dash-greeting">Good morning! 🌿</p>
+      <h2 class="dash-title" id="dash-title">Your Vitality Hub</h2>
+      <div class="dash-quote-card">
+        <div class="dq-label">💬 Quote of the Day</div>
+        <p class="dq-text" id="dash-quote">"The greatest wealth is health."</p>
+      </div>
+      <div class="fact-strip">
+        <div><div class="fact-label">🔬 Did You Know?</div><p class="fact-txt" id="dash-fact">Loading health fact...</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="dash-body">
+    <div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement</div></div>
+    <div class="stat-row">
+      <div class="stat-c"><div class="stat-ic">🔥</div><div class="stat-val" id="stat-streak">0</div><div class="stat-lbl">Day Streak</div></div>
+      <div class="stat-c"><div class="stat-ic">📊</div><div class="stat-val" id="stat-avg">—</div><div class="stat-lbl">Week Average</div></div>
+      <div class="stat-c"><div class="stat-ic">🧬</div><div class="stat-val" id="stat-base">—</div><div class="stat-lbl">Baseline Score</div></div>
+    </div>
+    <button class="checkin-card" id="checkin-card">
+      <div class="cc-text"><h3 id="cc-title">⚡ Start Today's Check-In</h3><p id="cc-sub">Takes about 5 minutes. Your daily score awaits!</p></div>
+      <div class="cc-arrow">→</div>
+    </button>
+    <div class="chart-card">
+      <div class="chart-title">📈 Your 14-Day Aging Speed Trend</div>
+      <div id="mini-chart-wrap"><p class="no-data-msg">📊 Your trend chart will appear here after a few check-ins.</p></div>
+    </div>
+    <div class="ad-wrap" style="text-align:center"><div class="ad-unit ad-unit-rect">Advertisement</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <button class="btn btn-outline btn-block" data-view="reports">📈 View Reports</button>
+      <button class="btn btn-coral btn-block" style="color:white" data-view="areas">🎯 Areas to Improve</button>
+    </div>
+    <div style="margin-top:12px">
+      <button class="btn btn-outline btn-block" data-view="home">🏠 Back to Home</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== VIEW: TRACKER ===== -->
+<div id="view-tracker" class="view">
+  <div class="track-hdr">
+    <div class="track-friendly">🌿 <em>This is not an exam — it's a gift to yourself. Don't feel bad if some scores are low today. Every honest answer helps you improve, and tomorrow is always a fresh start with new possibilities.</em></div>
+    <h2>Today's Daily Check-In</h2>
+    <p>Quick, honest, and done in 5 minutes. Your future self is rooting for you.</p>
+    <div class="progress-wrap">
+      <div class="prog-info"><span id="track-prog-text">Question 1 of 15</span><span id="track-prog-pct">0% complete</span></div>
+      <div class="prog-track"><div class="prog-fill" id="track-prog-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="container" style="max-width:680px"><div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement</div></div></div>
+  <div class="track-body"><div id="tracker-q-body"></div></div>
+</div>
+
+<!-- ===== VIEW: DAY RESULTS ===== -->
+<div id="view-day-results" class="view">
+  <div class="dr-hero">
+    <p id="dr-date" style="color:rgba(255,255,255,.7);margin-bottom:8px;font-size:.9rem"></p>
+    <h2>Today's Results</h2>
+    <p style="color:rgba(255,255,255,.75)">Here's how your day stacked up for your biological age.</p>
+    <div class="score-wrap">
+      <div class="score-ring">
+        <svg viewBox="0 0 200 200">
+          <circle class="track" cx="100" cy="100" r="80"/>
+          <circle class="fill" id="dr-circle-fill" cx="100" cy="100" r="80" stroke-dasharray="502" stroke-dashoffset="502"/>
+        </svg>
+        <div class="score-center">
+          <span class="score-num" id="dr-score-num">—</span>
+          <span class="score-unit">today's score</span>
+        </div>
+      </div>
+      <div class="score-badge" id="dr-score-badge">Calculating...</div>
+    </div>
+  </div>
+  <div class="dr-body">
+    <div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement</div></div>
+    <div id="dr-feedback-list"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px">
+      <button class="btn btn-primary btn-block" data-view="dashboard">📊 Dashboard</button>
+      <button class="btn btn-outline btn-block" data-view="reports">📈 Reports</button>
+    </div>
+    <div class="ad-wrap" style="text-align:center"><div class="ad-unit ad-unit-rect">Advertisement</div></div>
+  </div>
+</div>
+
+<!-- ===== VIEW: REPORTS ===== -->
+<div id="view-reports" class="view">
+  <div class="rep-hdr">
+    <h2>📈 Your Progress Reports</h2>
+    <p>See your aging speed trends over time and celebrate how far you've come.</p>
+  </div>
+  <div class="rep-body">
+    <div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement</div></div>
+    <div class="tab-row">
+      <button class="tab-btn active" data-tab="week">This Week</button>
+      <button class="tab-btn" data-tab="month">This Month</button>
+      <button class="tab-btn" data-tab="year">This Year</button>
+    </div>
+    <div class="rep-grid" id="rep-stats-grid"></div>
+    <div class="chart-card" style="margin-bottom:24px">
+      <div class="chart-title">📊 Aging Speed Score Over Time</div>
+      <div id="rep-chart-wrap"><p class="no-data-msg" style="padding:60px 0">No data yet — complete daily check-ins to see your trend here!</p></div>
+    </div>
+    <div class="ad-wrap" style="text-align:center"><div class="ad-unit ad-unit-rect">Advertisement</div></div>
+    <div class="chart-card">
+      <div class="chart-title">🎯 Category Breakdown</div>
+      <div id="rep-cat-breakdown"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== VIEW: AREAS ===== -->
+<div id="view-areas" class="view">
+  <div class="areas-hdr">
+    <h2>🎯 Your Areas to Work On</h2>
+    <p>Based on your last 30 days of tracking, here's where your attention will create the most impact on your biological age.</p>
+  </div>
+  <div class="areas-body">
+    <div class="ad-wrap"><div class="ad-unit ad-unit-banner">Advertisement</div></div>
+    <div id="areas-body-content">
+      <p class="no-data-msg" style="text-align:center;padding:60px 0;font-style:italic;color:var(--text-light)">📊 Complete at least 3 daily check-ins to unlock your personalized Areas to Work On.</p>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script>
+  // Wire up secondary CTA buttons
+  document.getElementById('hero-cta-2').addEventListener('click', () => document.getElementById('hero-cta').click());
+  document.getElementById('hero-cta-3').addEventListener('click', () => document.getElementById('hero-cta').click());
+</script>
+</body>
+</html>
