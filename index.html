@@ -47,8 +47,71 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
   -->
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=4">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <style>
+    /* HERO HARD OVERRIDES — cannot be beaten by external CSS */
+    .hero {
+      background: #061A0E !important;
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      min-height: 100vh !important;
+      align-items: center !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+    .hero-left {
+      position: relative !important;
+      z-index: 3 !important;
+      padding: 140px 32px 100px 64px !important;
+    }
+    .hero-right {
+      position: relative !important;
+      z-index: 3 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 140px 64px 100px 0 !important;
+      min-height: 100vh !important;
+    }
+    #orb-canvas {
+      display: block !important;
+      width: 100% !important;
+      max-width: 500px !important;
+    }
+    #hero-particles {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 2 !important;
+      pointer-events: none !important;
+    }
+    .hero-bg {
+      position: absolute !important;
+      inset: 0 !important;
+      z-index: 0 !important;
+      background:
+        radial-gradient(ellipse 70% 90% at 5% 50%, rgba(20,65,42,.95) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 70% at 90% 10%, rgba(10,30,18,.85) 0%, transparent 50%),
+        radial-gradient(ellipse 80% 40% at 50% 100%, rgba(3,10,5,1) 0%, transparent 55%) !important;
+    }
+    .hero-title { color: #ffffff !important; }
+    .hero-sub { color: rgba(255,255,255,.68) !important; }
+    .hero-stat-num { color: #E9C46A !important; }
+    .hero-stat-lbl { color: rgba(255,255,255,.45) !important; }
+    .hero-badge {
+      background: rgba(82,183,136,.12) !important;
+      border: 1px solid rgba(82,183,136,.3) !important;
+      color: rgba(255,255,255,.88) !important;
+    }
+    @media (max-width: 1000px) {
+      .hero { grid-template-columns: 1fr !important; }
+      .hero-right { display: none !important; }
+      .hero-left { padding: 130px 24px 80px !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -546,10 +609,7 @@
   /* --- Vitality Orb --- */
   var oc = document.getElementById('orb-canvas');
   if(!oc) return;
-  function setSize(){
-    var w=Math.min(oc.parentElement.offsetWidth-32,490);
-    oc.width=w; oc.height=w;
-  }
+  function setSize(){ var w=Math.min(Math.round(window.innerWidth*0.44),500); oc.width=w; oc.height=w; }
   setSize(); window.addEventListener('resize',setSize);
 
   var factors=[
