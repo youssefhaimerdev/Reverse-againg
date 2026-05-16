@@ -21,7 +21,13 @@
   <meta name="twitter:image" content="https://reverse-againg.vercel.app/og-image.jpg">
   <meta name="google-site-verification" content="google030d394dae3fee69">
   <meta name="theme-color" content="#1B4D36">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <!-- Favicon — all browsers & devices -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg">
+  <meta name="msapplication-TileColor" content="#1B4D36">
+  <meta name="msapplication-TileImage" content="favicon.svg">
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://reverse-againg.vercel.app/#app","name":"ReverseAge","url":"https://reverse-againg.vercel.app/","description":"Free biological age assessment and daily habit tracker to help reverse aging naturally through science-backed lifestyle principles.","applicationCategory":"HealthApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Aging Speed Assessment","Daily Habit Tracker","Personalized Feedback","Progress Reports","Areas to Work On","100% Private — No Data Collection"]},{"@type":"Organization","@id":"https://reverse-againg.vercel.app/#org","name":"ReverseAge","url":"https://reverse-againg.vercel.app/","description":"A free platform dedicated to helping people reverse their biological age through daily habit tracking and science-backed lifestyle principles."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can you really reverse aging?","acceptedAnswer":{"@type":"Answer","text":"While chronological age cannot be reversed, biological age — how old your cells and organs actually function — can be significantly improved through lifestyle changes. Research in epigenetics shows that diet, sleep, exercise, stress management, and social connection can measurably slow and even reverse biological aging markers."}},{"@type":"Question","name":"What is biological age?","acceptedAnswer":{"@type":"Answer","text":"Biological age is a measure of how old your body actually is at the cellular level, as opposed to how many years you've been alive. People with the same chronological age can have very different biological ages based on their lifestyle, genetics, and environment."}},{"@type":"Question","name":"How does the aging speed score work?","acceptedAnswer":{"@type":"Answer","text":"Our aging speed score is calculated from a comprehensive assessment of the key lifestyle factors that science has identified as the strongest drivers of biological aging. A lower score means you are aging more slowly. The score ranges from 0 to 100."}}]}]}
@@ -71,20 +77,76 @@
 <div id="view-home" class="view">
 
   <section class="hero">
-    <div class="hero-orb1"></div>
-    <div class="hero-orb2"></div>
+    <!-- Animated background layers -->
+    <div class="hero-blob hero-blob1"></div>
+    <div class="hero-blob hero-blob2"></div>
+    <div class="hero-blob hero-blob3"></div>
+    <div class="hero-blob hero-blob4"></div>
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-scan-line"></div>
+
+    <!-- LEFT: Content -->
     <div class="hero-content">
       <div class="hero-badge">🧬 Science-backed · 100% Free · No data stored</div>
       <h1 class="hero-title">Age is a number.<br><em>Vitality is a choice.</em></h1>
-      <p class="hero-sub">Discover how fast you're aging, get personalized guidance, and build daily habits that turn back your biological clock — one day at a time.</p>
+      <p class="hero-sub">Discover how fast you're aging, get personalized guidance, and build the daily habits that turn back your biological clock — one day at a time.</p>
       <div class="hero-actions">
-        <button class="btn btn-gold btn-lg" id="hero-cta">🌿 Get My Free Assessment</button>
-        <button class="btn btn-lg" style="color:white;border:2px solid rgba(255,255,255,.45);background:rgba(255,255,255,.1)" onclick="document.getElementById('mission-section').scrollIntoView({behavior:'smooth'})">Learn More ↓</button>
+        <button class="btn btn-glow btn-lg" id="hero-cta">🌿 Get My Free Assessment</button>
+        <button class="btn btn-glass btn-lg" onclick="document.getElementById('mission-section').scrollIntoView({behavior:'smooth'})">Learn More ↓</button>
       </div>
       <div class="hero-stats">
         <div class="hero-stat"><div class="hero-stat-num">0</div><div class="hero-stat-lbl">Products sold</div></div>
         <div class="hero-stat"><div class="hero-stat-num">0</div><div class="hero-stat-lbl">Data collected</div></div>
         <div class="hero-stat"><div class="hero-stat-num">∞</div><div class="hero-stat-lbl">Better days ahead</div></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Vitality Orb -->
+    <div class="hero-visual-col">
+      <div class="vitality-orb">
+        <!-- Expanding pulse rings -->
+        <div class="vo-pulse vo-pulse-1"></div>
+        <div class="vo-pulse vo-pulse-2"></div>
+        <div class="vo-pulse vo-pulse-3"></div>
+        <!-- Decorative orbit rings -->
+        <div class="vo-ring-1"></div>
+        <div class="vo-ring-2"></div>
+        <div class="vo-ring-3"></div>
+        <!-- Glowing core -->
+        <div class="vo-core">
+          <span class="vo-leaf">🌿</span>
+          <div class="vo-core-lbl">Vitality</div>
+          <div class="vo-core-sub">Starts now</div>
+        </div>
+        <!-- Orbiting health factors (different radii, speeds, directions) -->
+        <div class="vo-orbit vo-cw" style="--dur:14s;--r:155px;--fbg:rgba(82,183,136,.13);--fbd:rgba(82,183,136,.38);--fglow:rgba(82,183,136,.2);animation-delay:-1s">
+          <div class="vo-factor">🌙 Sleep</div>
+        </div>
+        <div class="vo-orbit vo-ccw" style="--dur:11s;--r:172px;--fbg:rgba(244,162,97,.12);--fbd:rgba(244,162,97,.38);--fglow:rgba(244,162,97,.18);animation-delay:-3s">
+          <div class="vo-factor">🏃 Exercise</div>
+        </div>
+        <div class="vo-orbit vo-cw" style="--dur:18s;--r:168px;--fbg:rgba(74,222,128,.1);--fbd:rgba(74,222,128,.32);--fglow:rgba(74,222,128,.16);animation-delay:-6s">
+          <div class="vo-factor">🥗 Nutrition</div>
+        </div>
+        <div class="vo-orbit vo-ccw" style="--dur:13s;--r:160px;--fbg:rgba(139,92,246,.12);--fbd:rgba(139,92,246,.35);--fglow:rgba(139,92,246,.18);animation-delay:-5s">
+          <div class="vo-factor">🧘 Stress</div>
+        </div>
+        <div class="vo-orbit vo-cw" style="--dur:16s;--r:178px;--fbg:rgba(56,189,248,.1);--fbd:rgba(56,189,248,.3);--fglow:rgba(56,189,248,.15);animation-delay:-9s">
+          <div class="vo-factor">💧 Hydration</div>
+        </div>
+        <div class="vo-orbit vo-ccw" style="--dur:10s;--r:162px;--fbg:rgba(251,191,36,.1);--fbd:rgba(251,191,36,.32);--fglow:rgba(251,191,36,.16);animation-delay:-4s">
+          <div class="vo-factor">🧠 Mind</div>
+        </div>
+        <!-- Floating stat badges -->
+        <div class="vo-stat vs-tl">
+          <span class="vs-num">🔬</span>
+          <span class="vs-lbl">Science-backed</span>
+        </div>
+        <div class="vo-stat vs-br">
+          <span class="vs-num">100%</span>
+          <span class="vs-lbl">Free forever</span>
+        </div>
       </div>
     </div>
   </section>
@@ -483,6 +545,63 @@
 </div>
 
 <script src="app.js"></script>
+<script>
+// Hero Canvas Particle System
+(function(){
+  const canvas = document.getElementById('hero-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, particles;
+  function resize(){
+    W = canvas.width = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
+  }
+  function mkParticle(){
+    const colors = [[82,183,136],[233,196,106],[255,255,255],[139,92,246],[56,189,248]];
+    const c = colors[Math.floor(Math.random()*colors.length)];
+    return {
+      x: Math.random()*W, y: Math.random()*H,
+      r: Math.random()*2+.4,
+      vx:(Math.random()-.5)*.25, vy:-(Math.random()*.45+.1),
+      op:Math.random()*.5+.1,
+      c, pulse:Math.random()*Math.PI*2,
+      ps:Math.random()*.025+.008
+    };
+  }
+  function init(){
+    resize();
+    particles = Array.from({length:90}, mkParticle);
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    particles.forEach(p=>{
+      p.x+=p.vx; p.y+=p.vy; p.pulse+=p.ps;
+      const op = p.op*(0.65+0.35*Math.sin(p.pulse));
+      if(p.y<-8){p.y=H+8;p.x=Math.random()*W}
+      if(p.x<-8)p.x=W+8;
+      if(p.x>W+8)p.x=-8;
+      // core dot
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(${p.c[0]},${p.c[1]},${p.c[2]},${op})`;
+      ctx.fill();
+      // glow halo for bigger particles
+      if(p.r>1.2){
+        const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*5);
+        g.addColorStop(0,`rgba(${p.c[0]},${p.c[1]},${p.c[2]},${op*.3})`);
+        g.addColorStop(1,`rgba(${p.c[0]},${p.c[1]},${p.c[2]},0)`);
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r*5,0,Math.PI*2);
+        ctx.fillStyle=g;
+        ctx.fill();
+      }
+    });
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', ()=>{ resize(); });
+  init(); draw();
+})();
+</script>
 <script>
   // Wire up secondary CTA buttons
   document.getElementById('hero-cta-2').addEventListener('click', () => document.getElementById('hero-cta').click());
