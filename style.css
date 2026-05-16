@@ -633,3 +633,39 @@ circle.fill{fill:none;stroke-width:14;stroke-linecap:round;transition:stroke-das
   .hero-visual-col{display:none}
   .hero-content{padding:130px 24px 80px;max-width:100%}
 }
+
+/* ================================================================
+   HERO FORCE OVERRIDE — Canvas Orb Edition
+   ================================================================ */
+section.hero,div.hero,.hero{
+  background:#050F09!important;
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  align-items:center!important;
+  min-height:100vh!important;
+  position:relative!important;
+  overflow:hidden!important
+}
+.hero-left{
+  position:relative;z-index:3;
+  padding:140px 20px 100px 64px;
+  max-width:580px
+}
+.hero-right{
+  position:relative;z-index:3;
+  display:flex!important;
+  align-items:center;justify-content:center;
+  padding:140px 60px 100px 0;
+  min-height:100vh
+}
+#orb-canvas{
+  display:block;
+  max-width:500px;max-height:500px;
+  width:100%;height:auto;
+  filter:drop-shadow(0 0 60px rgba(82,183,136,.25))
+}
+@media(max-width:1000px){
+  section.hero,div.hero,.hero{grid-template-columns:1fr!important}
+  .hero-right{display:none!important}
+  .hero-left{padding:130px 24px 80px!important;max-width:100%!important}
+}
